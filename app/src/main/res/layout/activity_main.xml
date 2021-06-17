@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seleccione para reproducir el sonido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/plasma"
+        android:layout_width="131dp"
+        android:layout_height="109dp"
+        android:background="@drawable/plasma"
+        android:text="plasma"
+        app:layout_constraintBottom_toTopOf="@+id/mars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sun"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/sun"
+        android:layout_width="128dp"
+        android:layout_height="107dp"
+        android:background="@drawable/sun"
+        android:text="sun"
+        app:layout_constraintBottom_toTopOf="@+id/voyager"
+        app:layout_constraintEnd_toStartOf="@+id/plasma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/mars"
+        android:layout_width="120dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/mars1"
+        android:text="mars"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/mistery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/voyager"
+        app:layout_constraintTop_toBottomOf="@+id/plasma" />
+
+    <Button
+        android:id="@+id/voyager"
+        android:layout_width="108dp"
+        android:layout_height="96dp"
+        android:background="@drawable/voyager"
+        android:text="voyager"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/saturn"
+        app:layout_constraintEnd_toStartOf="@+id/mars"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sun" />
+
+    <Button
+        android:id="@+id/mistery"
+        android:layout_width="155dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/plasmatsunami"
+        android:text="mistery"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saturn"
+        app:layout_constraintTop_toBottomOf="@+id/mars" />
+
+    <Button
+        android:id="@+id/saturn"
+        android:layout_width="122dp"
+        android:layout_height="119dp"
+        android:background="@drawable/saturno"
+        android:text="saturn"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mistery"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voyager" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="100dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:background="@android:drawable/btn_dialog"
+        android:text="stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageView"
+        android:layout_width="418dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/background3" />
+
+</android.support.constraint.ConstraintLayout>
